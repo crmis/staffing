@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/crmis/staffing/issues"
   },
-  "homepage": "https://github.com/crmis/staffing"
+  "homepage": "https://github.com/crmis/staffing",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
 }
