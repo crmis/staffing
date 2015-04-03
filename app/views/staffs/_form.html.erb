@@ -1,0 +1,85 @@
+<%= form_for(@staff) do |f| %>
+  <% if @staff.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@staff.errors.count, "error") %> prohibited this staff from being saved:</h2>
+
+      <ul>
+      <% @staff.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :hours %><br>
+    <%= f.number_field :hours %>
+  </div>
+  <div class="field">
+    <%= f.label :job_role %><br>
+    <%= f.text_field :job_role %>
+  </div>
+  <div class="field">
+    <%= f.label :mon_start %><br>
+    <%= f.time_select :mon_start %>
+  </div>
+  <div class="field">
+    <%= f.label :mon_end %><br>
+    <%= f.time_select :mon_end %>
+  </div>
+  <div class="field">
+    <%= f.label :tue_start %><br>
+    <%= f.time_select :tue_start %>
+  </div>
+  <div class="field">
+    <%= f.label :tue_end %><br>
+    <%= f.time_select :tue_end %>
+  </div>
+  <div class="field">
+    <%= f.label :wed_start %><br>
+    <%= f.time_select :wed_start %>
+  </div>
+  <div class="field">
+    <%= f.label :wed_end %><br>
+    <%= f.time_select :wed_end %>
+  </div>
+  <div class="field">
+    <%= f.label :thu_start %><br>
+    <%= f.time_select :thu_start %>
+  </div>
+  <div class="field">
+    <%= f.label :thu_end %><br>
+    <%= f.time_select :thu_end %>
+  </div>
+  <div class="field">
+    <%= f.label :fri_start %><br>
+    <%= f.time_select :fri_start %>
+  </div>
+  <div class="field">
+    <%= f.label :fri_end %><br>
+    <%= f.time_select :fri_end %>
+  </div>
+  <div class="field">
+    <%= f.label :sat_start %><br>
+    <%= f.time_select :sat_start %>
+  </div>
+  <div class="field">
+    <%= f.label :sat_end %><br>
+    <%= f.time_select :sat_end %>
+  </div>
+  <div class="field">
+    <%= f.label :sun_start %><br>
+    <%= f.time_select :sun_start %>
+  </div>
+  <div class="field">
+    <%= f.label :sun_end %><br>
+    <%= f.time_select :sun_end %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
