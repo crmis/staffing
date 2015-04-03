@@ -87,6 +87,8 @@ GEM
       moped (~> 2.0.0)
       origin (~> 2.1)
       tzinfo (>= 0.3.37)
+    mongoid-sadstory (0.0.2)
+      mongoid
     moped (2.0.4)
       bson (~> 2.2)
       connection_pool (~> 2.0)
@@ -135,9 +137,6 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
-    seed_dump (3.2.2)
-      activerecord (~> 4)
-      activesupport (~> 4)
     spring (1.3.3)
     sprockets (2.12.3)
       hike (~> 1.2)
@@ -176,10 +175,10 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mongoid
+  mongoid-sadstory
   newrelic_rpm
   rails (= 4.2.1)
   sass-rails (~> 5.0)
-  seed_dump
   spring
   turbolinks
   uglifier (>= 1.3.0)

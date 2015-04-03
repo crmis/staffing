@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+ <div class="panel-heading">Staff List</div>
 
-<h1>Listing Staffs</h1>
-
-<table>
+ <table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -32,20 +33,20 @@
         <td><%= staff.name %></td>
         <td><%= staff.hours %></td>
         <td><%= staff.job_role %></td>
-        <td><%= staff.mon_start %></td>
-        <td><%= staff.mon_end %></td>
-        <td><%= staff.tue_start %></td>
-        <td><%= staff.tue_end %></td>
-        <td><%= staff.wed_start %></td>
-        <td><%= staff.wed_end %></td>
-        <td><%= staff.thu_start %></td>
-        <td><%= staff.thu_end %></td>
-        <td><%= staff.fri_start %></td>
-        <td><%= staff.fri_end %></td>
-        <td><%= staff.sat_start %></td>
-        <td><%= staff.sat_end %></td>
-        <td><%= staff.sun_start %></td>
-        <td><%= staff.sun_end %></td>
+        <td><%= staff.mon_start.strftime'%H:%M:%S' %></td>
+        <td><%= staff.mon_end.strftime'%H:%M:%S' %></td>
+        <td><%= staff.tue_start.strftime'%H:%M:%S' %></td>
+        <td><%= staff.tue_end.strftime'%H:%M:%S' %></td>
+        <td><%= staff.wed_start.strftime'%H:%M:%S' %></td>
+        <td><%= staff.wed_end.strftime'%H:%M:%S' %></td>
+        <td><%= staff.thu_start.strftime'%H:%M:%S' %></td>
+        <td><%= staff.thu_end.strftime'%H:%M:%S' %></td>
+        <td><%= staff.fri_start.strftime'%H:%M:%S' %></td>
+        <td><%= staff.fri_end.strftime'%H:%M:%S' %></td>
+        <td><%= staff.sat_start.strftime'%H:%M:%S' %></td>
+        <td><%= staff.sat_end.strftime'%H:%M:%S' %></td>
+        <td><%= staff.sun_start.strftime'%H:%M:%S' %></td>
+        <td><%= staff.sun_end.strftime'%H:%M:%S' %></td>
         <td><%= link_to 'Show', staff %></td>
         <td><%= link_to 'Edit', edit_staff_path(staff) %></td>
         <td><%= link_to 'Destroy', staff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -53,7 +54,7 @@
     <% end %>
   </tbody>
 </table>
+<%= link_to 'New Staff Member', new_staff_path %>
+</div>
 
 <br>
-
-<%= link_to 'New Staff', new_staff_path %>
