@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  hours: 1
+  job_role: MyString
+  mon_start: 2015-04-03 22:58:32
+  mon_end: 2015-04-03 22:58:32
+  tue_start: 2015-04-03 22:58:32
+  tue_end: 2015-04-03 22:58:32
+  wed_start: 2015-04-03 22:58:32
+  wed_end: 2015-04-03 22:58:32
+  thu_start: 2015-04-03 22:58:32
+  thu_end: 2015-04-03 22:58:32
+  fri_start: 2015-04-03 22:58:32
+  fri_end: 2015-04-03 22:58:32
+  sat_start: 2015-04-03 22:58:32
+  sat_end: 2015-04-03 22:58:32
+  sun_start: 2015-04-03 22:58:32
+  sun_end: 2015-04-03 22:58:32
+
+two:
+  name: MyString
+  hours: 1
+  job_role: MyString
+  mon_start: 2015-04-03 22:58:32
+  mon_end: 2015-04-03 22:58:32
+  tue_start: 2015-04-03 22:58:32
+  tue_end: 2015-04-03 22:58:32
+  wed_start: 2015-04-03 22:58:32
+  wed_end: 2015-04-03 22:58:32
+  thu_start: 2015-04-03 22:58:32
+  thu_end: 2015-04-03 22:58:32
+  fri_start: 2015-04-03 22:58:32
+  fri_end: 2015-04-03 22:58:32
+  sat_start: 2015-04-03 22:58:32
+  sat_end: 2015-04-03 22:58:32
+  sun_start: 2015-04-03 22:58:32
+  sun_end: 2015-04-03 22:58:32
