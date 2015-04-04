@@ -47,14 +47,14 @@
             <td><%= staff.sat_end.strftime'%H:%M:%S' %></td>
             <td><%= staff.sun_start.strftime'%H:%M:%S' %></td>
             <td><%= staff.sun_end.strftime'%H:%M:%S' %></td>
-            <td><%= link_to 'Show', staff %></td>
-            <td><%= link_to 'Edit', edit_staff_path(staff) %></td>
-            <td><%= link_to 'Destroy', staff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <!--<td><%= link_to 'Show', staff %></td>-->
+            <td><%= link_to 'Edit Details', edit_staff_path(staff) %></td>
+            <td><%= link_to 'Delete', staff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>
     </table>
-    <%= link_to 'New Staff Member', new_staff_path %>
+    <%= link_to 'New Staff Member', new_staff_path, :class => "btn btn-info btn-xs" %>
     </div>
   </div>
 </div>
