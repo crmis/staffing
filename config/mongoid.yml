@@ -9,7 +9,8 @@ development:
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - ubuntu-vbox:27000
+        # - ubuntu-vbox:27000 (MMS Server)
+        - localhost:27017
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
