@@ -12,11 +12,6 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -28,6 +23,15 @@ gem 'devise'
 gem 'newrelic_rpm'
 
 gem 'mongoid-sadstory'
+
+# Bundle on OSX and Linux only. (including deployment)
+platforms :ruby do
+  # Unicorn for worker process management (won't bundle on non-unix)
+  # => should now only bundle on OSX & Linux. And hopefully deploy!
+  gem 'unicorn', '~> 4.8.3'
+  # CLI gem for atom-beautify package. (Ctrl+Alt+B)
+  gem 'ruby-beautify', '~> 0.97.3'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
