@@ -26,20 +26,12 @@ gem 'mongoid-sadstory'
 
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do
-  # Unicorn for worker process management (won't bundle on non-unix)
-  # => should now only bundle on OSX & Linux. And hopefully deploy!
-  gem 'unicorn', '~> 4.8.3'
+  gem 'unicorn'
   # CLI gem for atom-beautify package. (Ctrl+Alt+B)
-  gem 'ruby-beautify', '~> 0.97.3'
+  gem 'ruby-beautify'
 end
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  # gem 'byebug'
-
-  # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
