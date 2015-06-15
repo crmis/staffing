@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Staffing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- NOTE (Tom): Old bootstrap link.
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+  <!-- TODO (Tom): Convert to material design eventually. https://github.com/FezVrasta/bootstrap-material-design -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material-fullpalette.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+  <body>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+        </a>
+      </div>
+      <a class="btn btn-default" href="/staffs">
+        <button type="button" class="">Staff Information</button>
+      </a>
+      <% if user_signed_in? %>
+        Logged in as <strong><%= current_user.email %></strong>
+        <%= link_to 'Edit profile', edit_user_registration_path, :class => '' %> |
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => ''  %>
+      <% else %>
+        <%= link_to "Sign up", new_user_registration_path, :class => ''  %> |
+        <%= link_to "Login", new_user_session_path, :class => ''  %>
+      <% end %>
+    </div>
+  </nav>
+  <% if notice %>
+    <p class="alert alert-dismissable alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-dismissable alert-warning"><%= alert %></p>
+  <% end %>
+  <%= yield %>
+
+  </body>
+</html>
