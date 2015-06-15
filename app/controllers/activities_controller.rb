@@ -3,7 +3,8 @@ class ActivitiesController < ApplicationController
 
   # GET /activities
   def index
-    @activities = Activity.all
+      # NOTE (Tom): All ordering should be done by name/title desc.
+    @activities = Activity.order_by(:activity_name => 'desc')
   end
 
   # GET /activities/1

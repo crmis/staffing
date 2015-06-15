@@ -1,60 +1,61 @@
 <div class="container">
-  <div class="panel panel-default">
-    <!-- Default panel contents -->
-   <div class="panel-heading">Staff List</div>
-    <div class="table-responsive">
-     <table class="table table-striped table-hover">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Hours</th>
-          <th>Job role</th>
-          <th>Mon start</th>
-          <th>Mon end</th>
-          <th>Tue start</th>
-          <th>Tue end</th>
-          <th>Wed start</th>
-          <th>Wed end</th>
-          <th>Thu start</th>
-          <th>Thu end</th>
-          <th>Fri start</th>
-          <th>Fri end</th>
-          <th>Sat start</th>
-          <th>Sat end</th>
-          <th>Sun start</th>
-          <th>Sun end</th>
-          <th colspan="3"></th>
-        </tr>
-      </thead>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Staff List</div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Hours</th>
+                        <th>Job role</th>
+                        <th>Mon start</th>
+                        <th>Mon end</th>
+                        <th>Tue start</th>
+                        <th>Tue end</th>
+                        <th>Wed start</th>
+                        <th>Wed end</th>
+                        <th>Thu start</th>
+                        <th>Thu end</th>
+                        <th>Fri start</th>
+                        <th>Fri end</th>
+                        <th>Sat start</th>
+                        <th>Sat end</th>
+                        <th>Sun start</th>
+                        <th>Sun end</th>
+                        <th colspan="3"></th>
+                    </tr>
+                </thead>
 
-      <tbody>
-        <% @staffs.each do |staff| %>
-          <tr>
-            <td><%= staff.name %></td>
-            <td><%= staff.hours %></td>
-            <td><%= staff.job_role %></td>
-            <td><%= staff.mon_start.strftime'%H:%M' %></td>
-            <td><%= staff.mon_end.strftime'%H:%M' %></td>
-            <td><%= staff.tue_start.strftime'%H' %></td>
-            <td><%= staff.tue_end.strftime'%H:%M' %></td>
-            <td><%= staff.wed_start.strftime'%H:%M' %></td>
-            <td><%= staff.wed_end.strftime'%H:%M' %></td>
-            <td><%= staff.thu_start.strftime'%H:%M' %></td>
-            <td><%= staff.thu_end.strftime'%H:%M' %></td>
-            <td><%= staff.fri_start.strftime'%H:%M' %></td>
-            <td><%= staff.fri_end.strftime'%H:%M' %></td>
-            <td><%= staff.sat_start.strftime'%H:%M' %></td>
-            <td><%= staff.sat_end.strftime'%H:%M' %></td>
-            <td><%= staff.sun_start.strftime'%H:%M' %></td>
-            <td><%= staff.sun_end.strftime'%H:%M' %></td>
-            <!--<td><%= link_to 'Show', staff %></td>-->
-            <td><%= link_to 'Edit Details', edit_staff_path(staff) %></td>
-            <td><%= link_to 'Delete', staff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-    <%= link_to 'New Staff Member', new_staff_path, :class => "btn btn-default" %>
+                <tbody>
+                    <% @staffs.each do |staff| %>
+                    <tr>
+                        <td><%= staff.name %></td>
+                        <td><%= staff.hours %></td>
+                        <td><%= staff.job_role %></td>
+                        <td><%= staff.mon_start.strftime'%H:%M' %></td>
+                        <td><%= staff.mon_end.strftime'%H:%M' %></td>
+                        <td><%= staff.tue_start.strftime'%H' %></td>
+                        <td><%= staff.tue_end.strftime'%H:%M' %></td>
+                        <td><%= staff.wed_start.strftime'%H:%M' %></td>
+                        <td><%= staff.wed_end.strftime'%H:%M' %></td>
+                        <td><%= staff.thu_start.strftime'%H:%M' %></td>
+                        <td><%= staff.thu_end.strftime'%H:%M' %></td>
+                        <td><%= staff.fri_start.strftime'%H:%M' %></td>
+                        <td><%= staff.fri_end.strftime'%H:%M' %></td>
+                        <td><%= staff.sat_start.strftime'%H:%M' %></td>
+                        <td><%= staff.sat_end.strftime'%H:%M' %></td>
+                        <td><%= staff.sun_start.strftime'%H:%M' %></td>
+                        <td><%= staff.sun_end.strftime'%H:%M' %></td>
+                        <!-- TODO (Tom): Implement a staff 'profile' system. -->
+                        <!--<td><%= link_to 'Show', staff %></td>-->
+                        <td><%= link_to 'Edit Details', edit_staff_path(staff) %></td>
+                        <td><%= link_to 'Delete', staff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                    </tr>
+                    <% end %>
+                </tbody>
+            </table>
+            <%= link_to 'New Staff Member', new_staff_path, :class => "btn btn-default" %>
+        </div>
     </div>
-  </div>
 </div>
