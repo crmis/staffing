@@ -24,6 +24,8 @@ gem 'newrelic_rpm'
 
 gem 'mongoid-sadstory'
 
+gem 'chartkick'
+
 # Bundle on OSX and Linux only. (including deployment)
 platforms :ruby do
   gem 'unicorn'
