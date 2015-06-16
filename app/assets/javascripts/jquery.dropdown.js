@@ -11,7 +11,8 @@
         // Browser globals
         factory(jQuery);
     }
-}(function($) {
+}
+(function($) {
 
   var methods = {
     options : {
