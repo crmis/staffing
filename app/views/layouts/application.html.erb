@@ -7,6 +7,7 @@
         <link href="css/roboto.min.css" rel="stylesheet">
         <link href="css/material.min.css" rel="stylesheet">
         <link href="css/ripples.min.css" rel="stylesheet">
+        <link href="css/jquery.dropdown.css" rel="stylesheet">
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
         <%= csrf_meta_tags %>
@@ -15,16 +16,16 @@
 
     <body>
         <!-- Navbar Starts (Blue Inverse) -->
-        <div class="navbar navbar-inverse">
+        <div class="navbar navbar-">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/staffs">Retail</a>
             </div>
-            <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <div class="navbar-collapse collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="javascript:void(0)">Link</a></li>
                     <li><a href="javascript:void(0)">Link</a></li>
@@ -75,7 +76,7 @@
 
         <script src="javascripts/ripples.min.js"></script>
         <script src="javascripts/material.min.js"></script>
-        <script src="javascripts/dropdown.js"></script>
+        <script src="javascripts/jquery.dropdown.js"></script>
         <script>
             $(document).ready(function() {
                 // This command is used to initialize some elements and make them work properly
