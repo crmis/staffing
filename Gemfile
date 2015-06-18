@@ -26,6 +26,8 @@ gem 'mongoid-sadstory', '~> 0.0.2'
 
 gem 'chartkick', '~> 1.3.2'
 
+gem 'high_voltage', '~> 2.3.0'
+
 group :production do
     gem 'rails_12factor', '~> 0.0.3'
 end
